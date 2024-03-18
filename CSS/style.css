@@ -1,0 +1,92 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex; /* make content flexible or make it not vertical */
+    justify-content: space-between;  /* create the space between content in nav */
+    /* border: 1px solid red; show how big is nav is by create bor der of nav */
+    padding: 10px; /* padding for more clearly content in nav */
+    background-color: #222831;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #00ADB5;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    
+}
+
+
+/* easily access li in class "menu" */
+.menu li {
+    margin-left: 10px ; /* create margin of li (to the left) */ 
+}
+
+/* can access both "li" and "a" from class "menu" at the same time */
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    color: #00ADB5;
+}
+
+.banner {
+    background-color: #393E46;
+    color: #fff;
+    height: 400px;
+    display: flex;
+    justify-content: center; /* justify content in horizontal */
+    align-items: center; /* align item in vertical */
+}
+
+.banner h1 {
+    margin-top: 20px;
+    color: #00ADB5;
+}
+
+.banner-info {
+    /* border: 1px solid red; */ 
+    text-align: center;
+}
+
+
+.banner-info img {
+    width: 300px;
+    border-radius: 100%; /*make border of pic round by this */
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* i got 3 columns now */
+    background-color: #EEEEEE;
+}
+
+main div {
+    padding: 20px;
+}
+
+main div p{
+    margin-top: 10px;
+}
+
+main img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #222831;
+    color: #00ADB5;
+    padding: 20px;
+    text-align: center;
+}
